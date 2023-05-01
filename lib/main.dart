@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/ui/widgets/navbar_widget.dart';
 import 'package:provider/provider.dart';
 
-import 'consts/global_const.dart';
+import 'consts/theme.dart';
 import 'providers/navbar_provider.dart';
+import 'ui/widgets/navbar_widget.dart';
 
 void main() => runApp(
       MultiProvider(

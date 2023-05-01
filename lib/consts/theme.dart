@@ -1,21 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Color backgroundColor = const Color(0xFFffffff);
-Color primaryColor = const Color(0xFF1877F2);
-Color blue1 = const Color(0xff1877F2);
-Color grey1 = const Color(0xff4E4B66);
+import 'color.dart';
 
 ThemeData theme() {
   return ThemeData(
     primarySwatch: Colors.blue,
-    primaryColor: primaryColor,
-    textTheme: GoogleFonts.poppinsTextTheme(),
+    primaryColor: blue1,
+    textTheme: GoogleFonts.poppinsTextTheme().copyWith(
+      bodyMedium: const TextStyle(
+        color: Colors.black,
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
+        letterSpacing: 0.12,
+      ),
+    ),
     appBarTheme: AppBarTheme(
       backgroundColor: backgroundColor,
       elevation: 0,
     ),
+    scaffoldBackgroundColor: backgroundColor,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      elevation: 0,
       backgroundColor: backgroundColor,
       selectedItemColor: blue1,
       unselectedItemColor: grey1,
@@ -23,3 +29,5 @@ ThemeData theme() {
     ),
   );
 }
+
+//! atur thema text pada aplikasi misalnya di body medium pada textTheme: GoogleFonts.poppinsTextTheme()
