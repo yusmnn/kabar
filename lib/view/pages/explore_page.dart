@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 import '../../consts/color.dart';
 
 import '../../consts/list_keywords.dart';
-import '../../providers/news_provider.dart';
+import '../../viewmodels/news_provider.dart';
 import '../widgets/articles_widget.dart';
 
 class ExplorePage extends StatefulWidget {

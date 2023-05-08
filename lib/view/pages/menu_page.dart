@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../../consts/color.dart';
 import '../../models/news_model.dart';
-import '../../providers/news_provider.dart';
+import '../../viewmodels/news_provider.dart';
 import '../widgets/articles_widget.dart';
 import '../widgets/domain_widget.dart';
 

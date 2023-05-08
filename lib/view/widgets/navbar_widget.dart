@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../providers/navbar_provider.dart';
+import '../../viewmodels/navbar_provider.dart';
 import '../pages/menu_page.dart';
 import '../pages/explore_page.dart';
 import '../pages/home_page.dart';

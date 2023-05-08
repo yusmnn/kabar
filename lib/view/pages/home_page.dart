@@ -1,13 +1,13 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_news_app/models/news_model.dart';
-import 'package:flutter_news_app/providers/news_provider.dart';
+import 'package:flutter_news_app/viewmodels/news_provider.dart';
 import 'package:flutter_news_app/view/widgets/articles_widget.dart';
 import 'package:flutter_news_app/view/widgets/loading_article_widget.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
-import '../../providers/navbar_provider.dart';
+import '../../viewmodels/navbar_provider.dart';
 import '../widgets/loading_trending_widget.dart';
 import '../widgets/trending_widget.dart';
 
