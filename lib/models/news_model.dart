@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_news_app/services/format_date.dart';
 
 class NewsModel with ChangeNotifier {
-  String newsId,
+  final String newsId,
       sourceName,
       authorName,
       title,
@@ -30,7 +30,7 @@ class NewsModel with ChangeNotifier {
 
 // parse json data from API to NewsModel
   factory NewsModel.fromJson(dynamic json) {
-    String dateToShow = formatDate(json["publishedAt"]);
+    final String dateToShow = formatDate(json["publishedAt"]);
 
     return NewsModel(
       newsId: json['source']['id'] ?? '',

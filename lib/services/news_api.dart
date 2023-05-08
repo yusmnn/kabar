@@ -21,12 +21,12 @@ class NewsApiServices {
         headers: {'X-Api-Key': apiKey},
       );
 
-      Map data = jsonDecode(response.body);
+      Map<dynamic, dynamic> data = jsonDecode(response.body);
 
       List newsTempList = [];
 
       // mengambil data artikel dari API.  v = list dari articles
-      for (Map v in data['articles']) {
+      for (Map<dynamic, dynamic> v in data['articles']) {
         newsTempList.add(v);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
@@ -48,11 +48,11 @@ class NewsApiServices {
         headers: {'X-Api-Key': apiKey},
       );
 
-      Map data = jsonDecode(response.body);
+      Map<dynamic, dynamic> data = jsonDecode(response.body);
 
       List newsTempList = [];
 
-      for (Map v in data['articles']) {
+      for (Map<dynamic, dynamic> v in data['articles']) {
         newsTempList.add(v);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
@@ -75,10 +75,10 @@ class NewsApiServices {
         headers: {'X-Api-Key': apiKey},
       );
 
-      Map data = jsonDecode(response.body);
+      Map<dynamic, dynamic> data = jsonDecode(response.body);
       List newsTempList = [];
 
-      for (Map v in data['articles']) {
+      for (Map<dynamic, dynamic> v in data['articles']) {
         newsTempList.add(v);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
@@ -88,7 +88,7 @@ class NewsApiServices {
   }
 
   static Future<List<NewsModel>> domainNews({required String domain}) async {
-    //* GET https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=f2c2759099784bfd9b931578f2f12df8
+    // https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=f2c2759099784bfd9b931578f2f12df8
 
     try {
       final Uri uri = Uri.https(baseUrl, 'v2/everything', {
@@ -104,7 +104,7 @@ class NewsApiServices {
       Map data = jsonDecode(response.body);
       List newsTempList = [];
 
-      for (var v in data['articles']) {
+      for (Map<dynamic, dynamic> v in data['articles']) {
         newsTempList.add(v);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
