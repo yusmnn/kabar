@@ -1,3 +1,4 @@
 {
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "cmake.sourceDirectory": "D:/SourceCode/!MSIB-FLUTTER/!MINI_PROJECT/flutter_news_app/linux"
 }

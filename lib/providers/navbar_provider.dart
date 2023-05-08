@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/ui/pages/bookmark_page.dart';
-import 'package:flutter_news_app/ui/pages/explore_page.dart';
-import 'package:flutter_news_app/ui/pages/home_page.dart';
+import 'package:flutter_news_app/view/pages/explore_page.dart';
+import 'package:flutter_news_app/view/pages/home_page.dart';
+
+import '../view/pages/menu_page.dart';
 
 class NavbarProvider with ChangeNotifier {
   List<NavbarData> items = [
@@ -13,12 +14,12 @@ class NavbarProvider with ChangeNotifier {
     NavbarData(
       label: 'Explore',
       widget: const ExplorePage(),
-      iconData: Icons.explore_sharp,
+      iconData: Icons.explore_rounded,
     ),
     NavbarData(
-      label: 'Bookmark',
-      widget: const BookmarkPage(),
-      iconData: Icons.bookmark_rounded,
+      label: 'Menu',
+      widget: const MenuPage(),
+      iconData: Icons.menu_rounded,
     ),
   ];
 
