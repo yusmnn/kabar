@@ -53,22 +53,4 @@ class NewsModel with ChangeNotifier {
       return NewsModel.fromJson(json);
     }).toList();
   }
-
-  // Map<String, dynamic> toJson() {
-  //   final Map<String, dynamic> data = {};
-
-  //   data['NewsId'] = newsId;
-  //   data['sourceName'] = sourceName;
-  //   data['authorName'] = authorName;
-  //   data['title'] = title;
-  //   data['description'] = description;
-  //   data['url'] = url;
-  //   data['urlToImage'] = urlToImage;
-  //   data['publishedAt'] = publishedAt;
-  //   data['dateToShow'] = dateToShow;
-  //   data['content'] = content;
-  //   data['readingTimeText'] = readingTimeText;
-
-  //   return data;
-  // }
 }
