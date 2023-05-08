@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../providers/navbar_provider.dart';
-import '../pages/bookmark_page.dart';
+import '../pages/menu_page.dart';
 import '../pages/explore_page.dart';
 import '../pages/home_page.dart';
 
@@ -20,7 +20,7 @@ class NavbarWidget extends StatelessWidget {
             children: const [
               HomePage(),
               ExplorePage(),
-              BookmarkPage(),
+              MenuPage(),
             ],
           );
         },
