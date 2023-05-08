@@ -178,11 +178,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 child: Center(
                   child: Text(
                     'Sorry! No news found',
-                    style: TextStyle(
-                      fontSize: 24,
-                      color: grey1,
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
                 ),
               ),

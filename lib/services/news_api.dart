@@ -101,7 +101,7 @@ class NewsApiServices {
         headers: {'X-Api-Key': apiKey},
       );
 
-      Map data = jsonDecode(response.body);
+      Map<dynamic, dynamic> data = jsonDecode(response.body);
       List newsTempList = [];
 
       for (Map<dynamic, dynamic> v in data['articles']) {
