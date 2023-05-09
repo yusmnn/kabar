@@ -2,18 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_news_app/services/format_date.dart';
 
 class NewsModel with ChangeNotifier {
-  final String newsId,
-      sourceName,
-      authorName,
-      title,
-      description,
-      url,
-      urlToImage,
-      publishedAt,
-      dateToShow,
-      content,
-      readingTimeText;
-
   NewsModel({
     required this.newsId,
     required this.sourceName,
@@ -47,6 +35,18 @@ class NewsModel with ChangeNotifier {
       readingTimeText: json['readingTimeText'] ?? '',
     );
   }
+
+  final String newsId,
+      sourceName,
+      authorName,
+      title,
+      description,
+      url,
+      urlToImage,
+      publishedAt,
+      dateToShow,
+      content,
+      readingTimeText;
 
   static List<NewsModel> newsFromSnapshot(List snapshot) {
     return snapshot.map((json) {

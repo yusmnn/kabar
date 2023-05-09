@@ -18,18 +18,10 @@ class ExplorePage extends StatefulWidget {
 }
 
 class _ExplorePageState extends State<ExplorePage> {
+  bool isSearching = false;
   late final TextEditingController searchController = TextEditingController();
   late final FocusNode searchFocusNode = FocusNode();
-
   List<NewsModel>? searchList = [];
-  bool isSearching = false;
-
-  @override
-  void initState() {
-    super.initState();
-    searchController;
-    searchFocusNode;
-  }
 
   @override
   void dispose() {
@@ -38,6 +30,13 @@ class _ExplorePageState extends State<ExplorePage> {
       searchFocusNode.dispose();
     }
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    searchController;
+    searchFocusNode;
   }
 
   @override

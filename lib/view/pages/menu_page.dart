@@ -22,17 +22,17 @@ class _MenuPageState extends State<MenuPage> {
   bool isDomain = false;
 
   @override
-  void initState() {
-    super.initState();
-    domainController;
-  }
-
-  @override
   void dispose() {
     if (mounted) {
       domainController.dispose();
     }
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    domainController;
   }
 
   @override

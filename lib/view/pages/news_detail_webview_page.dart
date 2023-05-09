@@ -10,12 +10,14 @@ class NewsDetailPage extends StatefulWidget {
   const NewsDetailPage({super.key, required this.url});
 
   final String url;
+
   @override
   State<NewsDetailPage> createState() => _NewsDetailPageState();
 }
 
 class _NewsDetailPageState extends State<NewsDetailPage> {
   late WebViewController webViewController;
+
   WebViewController? _controller;
 
   @override
