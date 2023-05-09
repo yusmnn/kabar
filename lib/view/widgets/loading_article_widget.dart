@@ -4,14 +4,9 @@ import 'package:shimmer/shimmer.dart';
 
 import '../../consts/color.dart';
 
-class LoadingArticleWidget extends StatefulWidget {
+class LoadingArticleWidget extends StatelessWidget {
   const LoadingArticleWidget({super.key});
 
-  @override
-  State<LoadingArticleWidget> createState() => _LoadingArticleWidgetState();
-}
-
-class _LoadingArticleWidgetState extends State<LoadingArticleWidget> {
   @override
   Widget build(BuildContext context) {
     Size size = Utils(context).screenSize;
