@@ -223,6 +223,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
       ),
       body: Column(
         children: [
+          // menampilkan berita dengan webview
           Expanded(
             child: WebViewWidget(
               controller: _controller!,

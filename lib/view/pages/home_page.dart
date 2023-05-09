@@ -48,6 +48,7 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(
                     height: 350,
+                    // menampilkan berita trending
                     child: FutureBuilder<List<NewsModel>>(
                       future: newsProvider.fetchTopHeadlines(),
                       builder: (ctx, snapshot) {
@@ -114,6 +115,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(width: 16),
+              // menampilkan semua berita
               FutureBuilder<List<NewsModel>>(
                 future: newsProvider.fetchAllNews(),
                 builder: (ctx, snapshot) {

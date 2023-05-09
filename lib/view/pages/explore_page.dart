@@ -18,10 +18,10 @@ class ExplorePage extends StatefulWidget {
 }
 
 class _ExplorePageState extends State<ExplorePage> {
-  bool isSearching = false;
+  late bool isSearching = false;
   late final TextEditingController searchController = TextEditingController();
   late final FocusNode searchFocusNode = FocusNode();
-  List<NewsModel>? searchList = [];
+  late List<NewsModel>? searchList = [];
 
   @override
   void dispose() {
@@ -125,6 +125,7 @@ class _ExplorePageState extends State<ExplorePage> {
                 // placeholder teks
               ),
             ),
+            // jika tidak sedang mencari dan list pencarian kosong
             if (!isSearching && searchList!.isEmpty)
               Expanded(
                 child: Padding(
@@ -172,6 +173,7 @@ class _ExplorePageState extends State<ExplorePage> {
                   ),
                 ),
               ),
+            // jika sedang mencari dan list pencarian kosong
             if (isSearching && searchList!.isEmpty)
               Expanded(
                 child: Center(
@@ -181,6 +183,7 @@ class _ExplorePageState extends State<ExplorePage> {
                   ),
                 ),
               ),
+            // jika sedang mencari dan list pencarian tidak kosong
             if (searchList != null && searchList!.isNotEmpty)
               Expanded(
                 child: Padding(

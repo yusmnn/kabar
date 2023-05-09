@@ -18,7 +18,7 @@ class MenuPage extends StatefulWidget {
 
 class _MenuPageState extends State<MenuPage> {
   late final TextEditingController domainController = TextEditingController();
-  List<NewsModel>? domainList = [];
+  late List<NewsModel>? domainList = [];
   bool isDomain = false;
 
   @override
@@ -72,6 +72,7 @@ class _MenuPageState extends State<MenuPage> {
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           children: [
+            //jika domainList kosong dan isDomain true
             if (!isDomain && domainList!.isEmpty)
               Expanded(
                 child: GridView.count(
@@ -96,6 +97,8 @@ class _MenuPageState extends State<MenuPage> {
                   }).toList(),
                 ),
               ),
+
+            //jika domainList kosong dan isDomain true
             if (isDomain && domainList!.isEmpty)
               Expanded(
                 child: Center(
@@ -109,6 +112,8 @@ class _MenuPageState extends State<MenuPage> {
                   ),
                 ),
               ),
+
+            //jika domainList tidak kosong (ada data)
             if (domainList != null && domainList!.isNotEmpty)
               Expanded(
                 child: ListView.builder(
