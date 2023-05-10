@@ -11,7 +11,7 @@ class NavbarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final navbarProvider = Provider.of<NavbarProvider>(context);
+    final navbarProvider = Provider.of<NavbarProvider>(context, listen: false);
     return Scaffold(
       body: Consumer<NavbarProvider>(
         builder: (context, navbarProvider, child) {
