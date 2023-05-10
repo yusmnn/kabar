@@ -15,7 +15,7 @@ class TrendingWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = Utils(context).screenSize;
-    final newsModelProvider = Provider.of<NewsModel>(context);
+    final newsModelProvider = Provider.of<NewsModel>(context, listen: false);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 6),

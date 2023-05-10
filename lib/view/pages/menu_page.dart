@@ -37,7 +37,7 @@ class _MenuPageState extends State<MenuPage> {
 
   @override
   Widget build(BuildContext context) {
-    final newsProvider = Provider.of<NewsProvider>(context);
+    final newsProvider = Provider.of<NewsProvider>(context, listen: false);
 
     return Scaffold(
       backgroundColor: primaryColor,

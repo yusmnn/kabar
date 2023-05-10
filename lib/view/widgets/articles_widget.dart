@@ -17,7 +17,7 @@ class ArticlesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = Utils(context).screenSize;
 
-    final newsModelProvider = Provider.of<NewsModel>(context);
+    final newsModelProvider = Provider.of<NewsModel>(context, listen: false);
     return Container(
       color: primaryColor,
       child: Padding(
