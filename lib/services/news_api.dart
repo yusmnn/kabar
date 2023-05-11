@@ -7,8 +7,7 @@ import 'package:http/http.dart';
 
 class NewsApiServices {
   static Future<List<NewsModel>> getAllNews() async {
-    // memecah URL menjadi beberapa bagian yang lebih kecil agar mudah diidentifikasi
-    // GET https://newsapi.org/v2/everything?q=bitcoin&apiKey=f2c2759099784bfd9b931578f2f12df8
+    // https://newsapi.org/v2/everything?q=bitcoin&apiKey=f2c2759099784bfd9b931578f2f12df8
 
     try {
       final Uri uri = Uri.https(baseUrl, 'v2/everything', {
@@ -25,9 +24,9 @@ class NewsApiServices {
 
       List newsTempList = [];
 
-      // mengambil data artikel dari API.  v = list dari articles
-      for (Map<dynamic, dynamic> v in data['articles']) {
-        newsTempList.add(v);
+      // mengolah data artikel dari API.  dataTemp = list dari articles
+      for (Map<dynamic, dynamic> dataTemp in data['articles']) {
+        newsTempList.add(dataTemp);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
@@ -52,8 +51,8 @@ class NewsApiServices {
 
       List newsTempList = [];
 
-      for (Map<dynamic, dynamic> v in data['articles']) {
-        newsTempList.add(v);
+      for (Map<dynamic, dynamic> dataTemp in data['articles']) {
+        newsTempList.add(dataTemp);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
@@ -78,8 +77,8 @@ class NewsApiServices {
       Map<dynamic, dynamic> data = jsonDecode(response.body);
       List newsTempList = [];
 
-      for (Map<dynamic, dynamic> v in data['articles']) {
-        newsTempList.add(v);
+      for (Map<dynamic, dynamic> dataTemp in data['articles']) {
+        newsTempList.add(dataTemp);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
@@ -104,8 +103,8 @@ class NewsApiServices {
       Map<dynamic, dynamic> data = jsonDecode(response.body);
       List newsTempList = [];
 
-      for (Map<dynamic, dynamic> v in data['articles']) {
-        newsTempList.add(v);
+      for (Map<dynamic, dynamic> dataTemp in data['articles']) {
+        newsTempList.add(dataTemp);
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
