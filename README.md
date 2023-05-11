@@ -1,16 +1,14 @@
-# flutter_news_app
+# Kabar
+Aplikasi berita yang dirancang untuk menampilkan informasi berita dari berbagai sumber.Aplikasi Kabar menyediakan berita terkait topik yang beragam, mulai dari bisnis hingga teknologi. Dalam penggunaannya, aplikasi Kabar dapat membantu pengguna untuk mendapatkan informasi dan dapat diakses dengan mudah di Telepon genggam.
 
-A new Flutter project.
+![1](https://github.com/yusmnn/flutter_news_app/assets/76932249/ff917b35-2259-419b-9f47-e72d88a34667)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## MVP
+### Menampilkan Berita
+  Pengguna dapat melihat berita terbaru dan yang sedang tren.
+### Membagikan berita
+  Memungkinkan pengguna untuk membagikan berita ke media sosial atau platform lainnya.
+### Pencarian Berita
+  Memungkinkan pengguna untuk mencari berita berdasarkan kata kunci tertentu.
+### List berita berdasarkan platform
+  Memungkinkan pengguna untuk mendapatkan berita berdasarkan sumber yang mereka percaya.
