@@ -179,7 +179,7 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                                       ),
                                       const SizedBox(height: 10),
                                       Text(
-                                        'Thanks for reporting this post!',
+                                        'Thanks for reporting this news!',
                                         style: Theme.of(context)
                                             .textTheme
                                             .labelMedium,
