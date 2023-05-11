@@ -98,7 +98,7 @@ class _MenuPageState extends State<MenuPage> {
                 ),
               ),
 
-            //jika domainList kosong dan isDomain true
+            // jika sedang mencari dan list pencarian kosong
             if (isDomain && domainList!.isEmpty)
               Expanded(
                 child: Center(
