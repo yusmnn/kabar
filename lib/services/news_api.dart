@@ -30,7 +30,7 @@ class NewsApiServices {
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
-      throw e.toString();
+      rethrow;
     }
   }
 
@@ -56,7 +56,7 @@ class NewsApiServices {
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
-      throw e.toString();
+      rethrow;
     }
   }
 
@@ -82,7 +82,7 @@ class NewsApiServices {
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
-      throw e.toString();
+      rethrow;
     }
   }
 
@@ -108,7 +108,7 @@ class NewsApiServices {
       }
       return NewsModel.newsFromSnapshot(newsTempList);
     } catch (e) {
-      throw e.toString();
+      rethrow;
     }
   }
 }
