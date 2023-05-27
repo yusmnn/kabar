@@ -1,9 +1,0 @@
-# Ignore all files/folders except lib/
-/*
-!/assets/
-!/lib/
-
-/lib/consts/api_const.dart
-# Include pubspec files
-!/pubspec.lock
-!/pubspec.yaml
