@@ -14,3 +14,9 @@ Aplikasi berita yang dirancang untuk menampilkan informasi berita dari berbagai 
     - Memungkinkan pengguna untuk mencari berita berdasarkan kata kunci tertentu.
   - List berita berdasarkan platform
     - Memungkinkan pengguna untuk mendapatkan berita berdasarkan sumber yang mereka percaya.
+
+## ⭐ Demo
+
+https://github.com/yusmnn/kabar/assets/76932249/e080f101-0fb1-49b1-a5e5-eeeeee31cfa5
+
+
